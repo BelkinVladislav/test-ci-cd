@@ -8,7 +8,7 @@ const clicks = ref(0);
     <main class="app-shell">
         <section class="card">
             <p class="eyebrow">Laravel + Vue</p>
-            <h1>Проект готов к работе</h1>
+            <h1>Проект готов к работе!</h1>
             <p class="description">
                 Фронтенд работает на Vue 3, а сборка и горячее обновление — через Vite.
             </p>
