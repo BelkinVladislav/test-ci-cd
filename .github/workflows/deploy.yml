@@ -72,8 +72,8 @@ jobs:
           SERVER_USER: ${{ secrets.SERVER_USER }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
-          ssh "$SERVER_USER@$SERVER_HOST" "
-            cd '$DEPLOY_PATH' &&
-            php artisan migrate --force &&
-            php artisan optimize &&
-            php artisan queue:restart
+          ssh "$SERVER_USER@$SERVER_HOST" \
+            "cd '$DEPLOY_PATH' && \
+            php artisan migrate --force && \
+            php artisan optimize && \
+            php artisan queue:restart"
